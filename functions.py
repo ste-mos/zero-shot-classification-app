@@ -19,5 +19,5 @@ def zero_shot_classification(data, labels):
 
 
 # Create a new column
-def store_new_column(data, column_name, data_list):
-    data[column_name] = data_list
+def store_new_column(data, column_name, list):
+    data[column_name] = list
