@@ -70,15 +70,15 @@ if data:
 
         
         
-        if store_button:
-            # Save the classification values in a new column 
-            store_new_column(data=df, column_name=add_column_name, list=classified_values)
-            # Get success message
-            st.success('Column has stored!')
-            # Create a download button to download the updated dataset (with the new column)
-            download_new_dataset_button = st.download_button(
-                label='Download Dataset',
-                data=df.to_csv(index=False),
-                file_name='zero_shot_classification_dataset.csv')
+    if store_button:
+        # Save the classification values in a new column 
+        store_new_column(data=df, column_name=add_column_name, data_list=classified_values)
+        # Get success message
+        st.success('Column has stored!')
+        # Create a download button to download the updated dataset (with the new column)
+        download_new_dataset_button = st.download_button(
+            label='Download Dataset',
+            data=df.to_csv(index=False),
+            file_name='zero_shot_classification_dataset.csv')
             
 
