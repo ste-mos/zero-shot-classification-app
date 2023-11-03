@@ -72,7 +72,7 @@ if data:
         
     if store_button:
         # Save the classification values in a new column 
-        store_new_column(data=df, column_name=add_column_name, data_list=classified_values)
+        store_new_column(data=df, column_name=add_column_name, list=classified_values)
         # Get success message
         st.success('Column has stored!')
         # Create a download button to download the updated dataset (with the new column)
