@@ -1,0 +1,6 @@
+pandas
+sentencepiece
+streamlit
+transformers
+pytorch
+tensorflow
